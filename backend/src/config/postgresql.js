@@ -10,7 +10,7 @@ function helper(sql, callback) {
     // console.log("--------------------------in execute query")
 
     let varObject = {
-      host: 'http://18.219.208.199/',
+      host: '18.219.208.199',
       user: 'postgres',
       password: 'anand1998',
       database: 'chinook',
