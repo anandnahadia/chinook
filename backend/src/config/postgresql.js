@@ -10,10 +10,10 @@ function helper(sql, callback) {
     // console.log("--------------------------in execute query")
 
     let varObject = {
-      host: '127.0.0.1',
+      host: 'http://18.219.208.199/',
       user: 'postgres',
-      password: 'root',
-      database: 'vue',
+      password: 'anand1998',
+      database: 'chinook',
       port: 5432,
     }
     var cn = varObject;

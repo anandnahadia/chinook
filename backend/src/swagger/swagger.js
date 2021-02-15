@@ -7,7 +7,8 @@ var sw = {
         "version": "1.0.0",
         "title": "Backend"
     },
-    "host": "localhost:10010",
+    "host": "http://18.219.208.199:10010/",
+    // "host": "http://localhost10010/",
     "basePath": "/",
     "securityDefinitions": {
         bearerAuth: {

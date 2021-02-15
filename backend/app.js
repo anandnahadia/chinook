@@ -15,5 +15,5 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument.sw, option
 app.use(bodyParser.json());
 app.use('/films',filmsrouter);
 
-console.log('listening on 3000');
+console.log('listening on 10010');
 app.listen(10010);
