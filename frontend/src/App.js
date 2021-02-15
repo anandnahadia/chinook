@@ -16,7 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:10010/films?page=1&limit=7`,{headers : {
+    axios.get(`http://18.219.208.199:10010/films?page=1&limit=7`,{headers : {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
     }
@@ -50,7 +50,7 @@ class App extends React.Component {
   render() {
     
     const filteredData = ()=> {
-      axios.get(`http://localhost:10010/films?page=1&limit=7&filter=name&search=break`,{headers : {
+      axios.get(`http://18.219.208.199:10010/films?page=1&limit=7&filter=name&search=break`,{headers : {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
       }
@@ -69,7 +69,7 @@ class App extends React.Component {
       if(previous_page<1){
         previous_page = 1
       }
-      axios.get(`http://localhost:10010/films?page=`+previous_page+`&limit=7`,{headers : {
+      axios.get(`http://18.219.208.199:10010/films?page=`+previous_page+`&limit=7`,{headers : {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
       }
@@ -91,7 +91,7 @@ class App extends React.Component {
       }else{
         
       }
-      axios.get(`http://localhost:10010/films?page=`+next_page+`&limit=7`,{headers : {
+      axios.get(`http://18.219.208.199:10010/films?page=`+next_page+`&limit=7`,{headers : {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
       }
